@@ -17,7 +17,7 @@ import EffectItems from '../constants/design/EffectItems';
 import ViewStyle from '../styles/ViewStyle';
 
 const View = () => {
-  const { group, category, path, subCategory } = useParams();
+  const { group, category, path, subCategory, device, type } = useParams();
   const resourceURL = '//static.dable.io/widget-demo';
 
   const AlgorithmItems = RecoItems.concat(FixedItems);
@@ -35,8 +35,8 @@ const View = () => {
   const initialState = {
     isCategory: category,
     isSubCategory: activeSubItem.link,
-    nextDevice: 'mobile',
-    nextType: 'adOnly',
+    nextDevice: device === 'desktop' ? 'mobile' : 'desktop',
+    nextType: type === 'reco' ? 'adOnly' : 'reco',
   };
 
   const reducer = (state, action) => {

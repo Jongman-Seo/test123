@@ -59,6 +59,10 @@ const Preview = ({
                 className={`option device ${
                   option === device ? 'toggled' : ''
                 }`}
+                onClick={() => {
+                  onToggleDevice(option);
+                  history.push(`${commonHistoryURL}/${option}/${type}`);
+                }}
               >
                 {text}
               </span>
@@ -79,6 +83,10 @@ const Preview = ({
               <span
                 key={option}
                 className={`option type ${option === type ? 'toggled' : ''}`}
+                onClick={() => {
+                  onToggleDevice(option);
+                  history.push(`${commonHistoryURL}/${device}/${option}`);
+                }}
               >
                 {text}
               </span>

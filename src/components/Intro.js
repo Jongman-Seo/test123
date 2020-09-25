@@ -18,7 +18,7 @@ function Intro() {
             <img src={`${resourceURL}/img/intro/algorithm.png`} alt="" /> 추천
             알고리즘 유형
           </Link>
-          <Link to="/design/styled/horizontal/basic/mobile/reco">
+          <Link to="/design/styled/horizontal/basic/desktop/reco">
             <img src={`${resourceURL}/img/intro/design.png`} alt="" /> 위젯
             디자인 종류
           </Link>
