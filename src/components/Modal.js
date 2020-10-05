@@ -1,10 +1,12 @@
 // eslint-disable-next-line
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 /** @jsx jsx */ import { jsx } from '@emotion/core';
 import ModalStyle from '../styles/ModalStyle';
 
-const Modal = ({ modalHidden, setModalHidden, activeItem, isSubCategory }) => {
+const Modal = ({ modalHidden, setModalHidden, activeItem, activeSubItem }) => {
+  const { device } = useParams();
   return (
     <div
       className={`box_modal ${modalHidden ? 'hidden' : ''}`}
@@ -15,10 +17,9 @@ const Modal = ({ modalHidden, setModalHidden, activeItem, isSubCategory }) => {
         {activeItem.title}
       </h3>
       <p>
-        {
-          activeItem.category.filter((item) => item.link === isSubCategory)[0]
-            .text
-        }
+        {device === 'mobile' && activeSubItem.textOnMobile
+          ? activeSubItem.textOnMobile
+          : activeSubItem.text}
       </p>
       <button
         className="btn_modal close"
