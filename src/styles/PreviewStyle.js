@@ -4,17 +4,17 @@ const PreviewStyle = {
   width: '915px',
   '.img_box': {
     display: 'block',
-    width: '100%',
+    width: '915px',
     position: 'relative',
+    margin: '0 auto',
     '&.desktop': {
-      height: '546px',
-      paddingTop: '170px',
+      height: '545px',
+      paddingTop: '165px',
     },
     '&.mobile': {
       width: '300px',
-      height: '604px',
+      height: '605px',
       paddingTop: '105px',
-      margin: '0 auto',
     },
     '&:after': {
       display: 'block',

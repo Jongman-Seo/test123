@@ -49,24 +49,25 @@ const GlobalStyle = {
     left: 0,
     top: 0,
     transition: '1s',
-    transitionTimingFunction: 'ease-out',
     '&.enter': {
       zIndex: 10,
       opacity: 0,
-    },
-    '&.active, &.done': {
-      opacity: 1,
+      transitionTimingFunction: 'ease-out',
+      '&.active, &.done': {
+        opacity: 1,
+      },
     },
     '&.exit': {
       zIndex: 9,
       transition: '.3s',
+      transitionTimingFunction: 'ease-in',
       '&.active, &.done': {
         opacity: 0,
       },
     },
-    '&.active': {
-      position: 'fixed',
-    },
+    // '&.active': {
+    //   position: 'fixed',
+    // },
     '&.done': {
       position: 'unset',
       transform: 'none !important',

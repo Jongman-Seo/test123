@@ -68,7 +68,7 @@ const ViewStyle = {
     '.cont_text': {
       padding: '84px 0 0 60px',
       position: 'absolute',
-      zIndex: 10,
+      zIndex: 11,
     },
     h2: {
       display: 'inline-block',
