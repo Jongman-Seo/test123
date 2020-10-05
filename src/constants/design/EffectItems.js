@@ -2,12 +2,13 @@ const EffectItems = [
   {
     title: '줌인',
     link: 'zoomIn',
+    isAdOnly: true,
     category: [
       {
         title: '기본',
         link: 'basic',
         text:
-          '유저는 행동에 따른 사이트 내 변화를 민감하게 알아차립니다.\n마우스가 지나갈 때 사진이 확대되는 반응 하나로 개별 콘텐츠에 쏟는 유저의 관심이 높아질 수 있습니다',
+          '사용자가 슬롯에 마우스를 위치시키면 사진이 확대(zoom-in)되는 기능입니다.\n썸네일 이미지를 강조해 위젯의 주목도를 높일 수 있습니다.',
         hasNoMobile: true,
       },
     ],
@@ -15,12 +16,13 @@ const EffectItems = [
   {
     title: '배경색상',
     link: 'background',
+    isAdOnly: true,
     category: [
       {
         title: '기본',
         link: 'basic',
         text:
-          '유저가 콘텐츠 하나하나에 마우스오버를 할 때마다 콘텐츠를 강조할 수 있는 컬러가 입혀집니다.\n위젯이 위치한 곳까지 유저가 스크롤을 내렸을 때, 콘텐츠의 배경색상이 팍팍 바뀌니 그냥 지나칠 수 없겠죠?',
+          '사용자가 슬롯에 마우스를 위치시키면 콘텐츠를 강조하는 색상이 입혀지는 기능입니다.\n위젯이 위치한 곳까지 스크롤을 내린 사용자의 주의를 집중시켜 클릭률을 높일 수 있습니다.',
         hasNoMobile: true,
       },
     ],
@@ -28,11 +30,13 @@ const EffectItems = [
   {
     title: '위로 올리기',
     link: 'moveUp',
+    isAdOnly: true,
     category: [
       {
         title: '기본',
         link: 'basic',
-        text: 'lorem ipsum',
+        text:
+          '사용자가 슬롯에 마우스를 위치시키면 썸네일 이미지가 위로 살짝 이동합니다.\n썸네일 이미지를 강조해 위젯의 주목도를 높일 수 있습니다.',
         hasNoMobile: true,
       },
     ],
@@ -40,11 +44,13 @@ const EffectItems = [
   {
     title: '차단',
     link: 'block',
+    isAdOnly: true,
     category: [
       {
         title: '기본',
         link: 'basic',
-        text: '사용자가 보고싶지 않은 콘텐츠를 삭제할 수 있습니다.',
+        text:
+          '사용자가 보고 싶지 않은 콘텐츠를 위젯에서 삭제합니다.\n삭제한 콘텐츠가 위치한 슬롯에 새로운 콘텐츠가 나타납니다.',
         hasNoMobile: true,
       },
     ],
@@ -52,11 +58,13 @@ const EffectItems = [
   {
     title: '밑줄 강조',
     link: 'textDecoration',
+    isAdOnly: true,
     category: [
       {
         title: '기본',
         link: 'basic',
-        text: 'lorem ipsum',
+        text:
+          '사용자가 슬롯에 마우스를 위치시키면 슬롯의 텍스트 부분에 밑줄이 생겨 콘텐츠를 강조하는 기능입니다.',
         hasNoMobile: true,
       },
     ],
