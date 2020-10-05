@@ -35,8 +35,8 @@ const DesignView = ({
     <>
       <TransitionGroup>
         <CSSTransition
-          key={activeItem.id}
-          timeout={100}
+          key={activeItem.link}
+          timeout={300}
           classNames={classNames}
         >
           <section className="content design_view">
@@ -70,6 +70,7 @@ const DesignView = ({
                 modalHidden={modalHidden}
                 setModalHidden={setModalHidden}
                 activeItem={activeItem}
+                activeSubItem={activeSubItem}
                 isSubCategory={isSubCategory}
               />
             </div>

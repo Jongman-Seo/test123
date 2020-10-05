@@ -22,8 +22,8 @@ const AlgorithmView = ({
     <>
       <TransitionGroup>
         <CSSTransition
-          key={activeItem.id}
-          timeout={100}
+          key={activeItem.link}
+          timeout={300}
           classNames={classNames}
         >
           <section className="content algorithm_view">
