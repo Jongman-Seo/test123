@@ -69,7 +69,7 @@ const SidebarStyle = {
       width: '19px',
       height: '22px',
       background:
-        'url(http://static.dable.io/widget-demo/img/logo_side.png) 0 0 no-repeat',
+        'url(https://static.dable.io/widget-demo/img/logo_side.png) 0 0 no-repeat',
       backgroundSize: '100%',
       margin: '0 16px 0 20px',
     },
@@ -116,7 +116,7 @@ const SidebarStyle = {
     height: '13px',
     content: '""',
     background:
-      'url(http://static.dable.io/widget-demo/img/icon_best.png) 0 0 no-repeat',
+      'url(https://static.dable.io/widget-demo/img/icon_best.png) 0 0 no-repeat',
     backgroundSize: 'auto 100%',
     margin: '0 13px 0 17px',
     verticalAlign: 'middle',

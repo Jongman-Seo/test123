@@ -82,12 +82,12 @@ const ViewStyle = {
         width: '46px',
         height: '46px',
         background:
-          'url("http://static.dable.io/widget-demo/img/view/icon_bookmark.svg")',
+          'url("https://static.dable.io/widget-demo/img/view/icon_bookmark.svg")',
         transition: 'all .2s ease-out',
         verticalAlign: 'bottom',
         '&:hover, &.active': {
           background:
-            'url("http://static.dable.io/widget-demo/img/view/icon_bookmark_hover.svg")',
+            'url("https://static.dable.io/widget-demo/img/view/icon_bookmark_hover.svg")',
         },
       },
     },

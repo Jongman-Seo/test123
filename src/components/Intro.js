@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import IntroStyle from '../styles/IntroStyle';
 
 function Intro() {
-  const resourceURL = 'http://static.dable.io/widget-demo';
+  const resourceURL = 'https://static.dable.io/widget-demo';
   return (
     <div css={IntroStyle}>
       <h1 className="logo_top">
