@@ -5,8 +5,15 @@ import { useParams } from 'react-router-dom';
 /** @jsx jsx */ import { jsx } from '@emotion/core';
 import ModalStyle from '../styles/ModalStyle';
 
-const Modal = ({ modalHidden, setModalHidden, activeItem, activeSubItem }) => {
+const Modal = ({
+  modalHidden,
+  setModalHidden,
+  handleModalCookies,
+  activeItem,
+  activeSubItem,
+}) => {
   const { device } = useParams();
+
   return (
     <div
       className={`box_modal ${modalHidden ? 'hidden' : ''}`}
@@ -25,7 +32,10 @@ const Modal = ({ modalHidden, setModalHidden, activeItem, activeSubItem }) => {
         className="btn_modal close"
         type="button"
         aria-label="Close Modal"
-        onClick={() => setModalHidden(true)}
+        onClick={() => {
+          setModalHidden(true);
+          handleModalCookies();
+        }}
       />
     </div>
   );

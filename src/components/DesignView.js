@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { useCookies } from 'react-cookie';
 
 import Modal from './Modal';
 import Tab from './Tab';
@@ -29,7 +30,14 @@ const DesignView = ({
   onToggleDevice,
   onToggleType,
 }) => {
-  const [modalHidden, setModalHidden] = useState(false);
+  const [modalCookies, setModalCookies] = useCookies(['showModal']);
+  function handleModalCookies() {
+    setModalCookies('showModal', false, {
+      path: '/',
+      maxAge: 60 * 60 * 24 * 7, // 7days
+    });
+  }
+  const [modalHidden, setModalHidden] = useState(!!modalCookies.showModal);
 
   return (
     <>
@@ -69,6 +77,7 @@ const DesignView = ({
               <Modal
                 modalHidden={modalHidden}
                 setModalHidden={setModalHidden}
+                handleModalCookies={handleModalCookies}
                 activeItem={activeItem}
                 activeSubItem={activeSubItem}
                 isSubCategory={isSubCategory}
