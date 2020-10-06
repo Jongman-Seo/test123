@@ -71,26 +71,26 @@ const GlobalStyle = {
     },
   },
   /* icon */
-  '@font-face': {
-    fontFamily: 'icomoon',
-    src:
-      'url("http://static.dable.io/widget-demo/fonts/icomoon.eot"), url("http://static.dable.io/widget-demo/fonts/icomoon.eot#iefix") format("embedded-opentype"), url("http://static.dable.io/widget-demo/fonts/icomoon.ttf") format("truetype"), url("http://static.dable.io/widget-demo/fonts/icomoon.woff") format("woff"), url("http://static.dable.io/widget-demo/fonts/icomoon.svg#icomoon") format("svg")',
-    fontWeight: 'normal',
-    fontStyle: 'normal',
-    fontDisplay: 'block',
-  },
-  '.icon:before': {
-    display: 'inline-block',
-    content: '""',
-    verticalAlign: 'middle',
-    margin: '0 16px 0 20px',
-    fontFamily: 'icomoon !important',
-    fontSize: '20px',
-    color: '#0071ce',
-    lineHeight: 1,
-    WebkitFontSmoothing: 'antialiased',
-    MozOsxFontSmoothing: 'grayscale',
-  },
+  // '@font-face': {
+  //   fontFamily: 'icomoon',
+  //   src:
+  //     'url("http://static.dable.io/widget-demo/fonts/icomoon.eot"), url("http://static.dable.io/widget-demo/fonts/icomoon.eot#iefix") format("embedded-opentype"), url("http://static.dable.io/widget-demo/fonts/icomoon.ttf") format("truetype"), url("http://static.dable.io/widget-demo/fonts/icomoon.woff") format("woff"), url("http://static.dable.io/widget-demo/fonts/icomoon.svg#icomoon") format("svg")',
+  //   fontWeight: 'normal',
+  //   fontStyle: 'normal',
+  //   fontDisplay: 'block',
+  // },
+  // '.icon:before': {
+  //   display: 'inline-block',
+  //   content: '""',
+  //   verticalAlign: 'middle',
+  //   margin: '0 16px 0 20px',
+  //   fontFamily: 'icomoon !important',
+  //   fontSize: '20px',
+  //   color: '#0071ce',
+  //   lineHeight: 1,
+  //   WebkitFontSmoothing: 'antialiased',
+  //   MozOsxFontSmoothing: 'grayscale',
+  // },
   '.mixed:before': {
     content: '"\\e900"',
   },
