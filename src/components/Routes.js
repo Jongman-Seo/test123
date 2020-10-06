@@ -8,6 +8,7 @@ const ThisRoute = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Intro} />
+      <Route path="/test123" component={Intro} />
       <Route
         path="/:group/:category/:path/:subCategory?/:device?/:type?"
         component={View}
