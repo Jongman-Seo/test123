@@ -8,7 +8,9 @@ const Tab = ({ activeItem, isSubCategory, onChangeSubCategory }) => {
       {activeItem.category.map(({ title, link }) => (
         <li key={link}>
           <NavLink
-            to={`/${group}/${category}/${path}/${link}/desktop/reco`}
+            to={`/${group}/${category}/${path}/${link}/desktop/${
+              path === 'adOnly' ? 'adOnly' : 'reco'
+            }`}
             className={`${link === isSubCategory && 'default_active'}`}
             onClick={() => {
               onChangeSubCategory(link);

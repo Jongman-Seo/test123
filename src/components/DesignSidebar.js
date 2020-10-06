@@ -20,7 +20,9 @@ const SidebarItem = ({
     items.map((item) => (
       <li className="menu_item" key={item.link}>
         <NavLink
-          to={`/${group}/${category}/${item.link}/${item.category[0].link}/desktop/reco`}
+          to={`/${group}/${category}/${item.link}/${
+            item.category[0].link
+          }/desktop/${item.link === 'adOnly' ? 'adOnly' : 'reco'}`}
           className={item.link === activeItem.link ? 'active' : ''}
           onClick={() => {
             onChangeSubCategory(item.category[0].link);
