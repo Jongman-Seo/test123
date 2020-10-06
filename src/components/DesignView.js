@@ -8,16 +8,8 @@ import Modal from './Modal';
 import Tab from './Tab';
 import Preview from './Preview';
 
-const classNames = {
-  enter: 'trans enter',
-  enterActive: 'trans enter active',
-  enterDone: 'trans enter done',
-  exit: 'trans exit',
-  exitActive: 'trans exit active',
-  exitDone: 'trans exit done',
-};
-
 const DesignView = ({
+  classNames,
   resourceURL,
   group,
   activeItem,
@@ -66,6 +58,7 @@ const DesignView = ({
                 )}
               </div>
               <Preview
+                classNames={classNames}
                 resourceURL={resourceURL}
                 activeItem={activeItem}
                 activeSubItem={activeSubItem}

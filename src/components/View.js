@@ -16,6 +16,15 @@ import EffectItems from '../constants/design/EffectItems';
 
 import ViewStyle from '../styles/ViewStyle';
 
+const classNames = {
+  enter: 'trans enter',
+  enterActive: 'trans enter active',
+  enterDone: 'trans enter done',
+  exit: 'trans exit',
+  exitActive: 'trans exit active',
+  exitDone: 'trans exit done',
+};
+
 const View = () => {
   const { group, category, path, subCategory, device, type } = useParams();
   const resourceURL = '//static.dable.io/widget-demo';
@@ -108,6 +117,7 @@ const View = () => {
             onChangeCategory={onChangeCategory}
           />
           <AlgorithmView
+            classNames={classNames}
             resourceURL={resourceURL}
             group={group}
             activeItem={activeItem}
@@ -124,6 +134,7 @@ const View = () => {
             onChangeSubCategory={onChangeSubCategory}
           />
           <DesignView
+            classNames={classNames}
             resourceURL={resourceURL}
             group={group}
             activeItem={activeItem}

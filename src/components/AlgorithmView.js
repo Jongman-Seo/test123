@@ -3,16 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-const classNames = {
-  enter: 'trans enter',
-  enterActive: 'trans enter active',
-  enterDone: 'trans enter done',
-  exit: 'trans exit',
-  exitActive: 'trans exit active',
-  exitDone: 'trans exit done',
-};
-
 const AlgorithmView = ({
+  classNames,
   resourceURL,
   group,
   activeItem,
