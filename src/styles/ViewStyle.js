@@ -1,4 +1,6 @@
 const ViewStyle = {
+  minWidth: '1400px',
+  position: 'realtive',
   '.content': {
     width: '100%',
     boxSizing: 'border-box',

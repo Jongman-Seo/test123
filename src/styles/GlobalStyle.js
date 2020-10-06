@@ -65,9 +65,6 @@ const GlobalStyle = {
         opacity: 0,
       },
     },
-    // '&.active': {
-    //   position: 'fixed',
-    // },
     '&.done': {
       position: 'unset',
       transform: 'none !important',
